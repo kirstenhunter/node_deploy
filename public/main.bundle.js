@@ -1,6 +1,6 @@
 webpackJsonp([1,4],{
 
-/***/ 344:
+/***/ 345:
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -9,20 +9,20 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 344;
+webpackEmptyContext.id = 345;
 
 
 /***/ }),
 
-/***/ 345:
+/***/ 346:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(432);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(433);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(454);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__(452);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__environments_environment__ = __webpack_require__(455);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_app_module__ = __webpack_require__(453);
 
 
 
@@ -35,15 +35,15 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dyna
 
 /***/ }),
 
-/***/ 452:
+/***/ 453:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(192);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(423);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(285);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__view_games_component__ = __webpack_require__(453);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(424);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(286);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__view_games_component__ = __webpack_require__(454);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -83,12 +83,12 @@ var AppModule = (function () {
 
 /***/ }),
 
-/***/ 453:
+/***/ 454:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(285);
+/* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(286);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__ = __webpack_require__(612);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_map__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Games; });
@@ -109,6 +109,7 @@ var Games = (function () {
         var _this = this;
         this.http = http;
         this.games = [];
+        this.environment = process.env.NODE_ENV;
         console.log("GETTING ALL GAMES");
         var URI = "/api/games/";
         console.log(URI);
@@ -128,10 +129,11 @@ var Games = (function () {
     var _a;
 }());
 //# sourceMappingURL=/Users/khunter/deploy_node/taketwo/WORKING/gametable/src/view-games.component.js.map
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(218)))
 
 /***/ }),
 
-/***/ 454:
+/***/ 455:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -157,14 +159,14 @@ module.exports = ""
 /***/ 610:
 /***/ (function(module, exports) {
 
-module.exports = "<table id=\"table\" class=\"table\">\n      <thead>\n        <tr>\n          <th>Image</th>\n          <th>Name</th>\n          <th>Category</th>\n          <th>Description</th>\n          <th>Players</th>\n          <th>Rating</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr *ngFor=\"let game of games\">\n\t        <td><img src={{game.Image}} width=100></td>\n          <td>{{game.Name}}</td>\n          <td>{{game.Category}}</td>\n          <td>{{game.Description}}</td>\n          <td>{{game.Players}}</td>\n          <td>{{game.Rating}}</td>\n          \n        </tr>\n      </tbody>\n   </table>\n"
+module.exports = "<h1>{{environment}}</h1>\n<table id=\"table\" class=\"table\">\n      <thead>\n        <tr>\n          <th>Image</th>\n          <th>Name</th>\n          <th>Category</th>\n          <th>Description</th>\n          <th>Players</th>\n          <th>Rating</th>\n        </tr>\n      </thead>\n      <tbody>\n        <tr *ngFor=\"let game of games\">\n\t        <td><img src={{game.Image}} width=100></td>\n          <td>{{game.Name}}</td>\n          <td>{{game.Category}}</td>\n          <td>{{game.Description}}</td>\n          <td>{{game.Players}}</td>\n          <td>{{game.Rating}}</td>\n          \n        </tr>\n      </tbody>\n   </table>\n"
 
 /***/ }),
 
 /***/ 628:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(345);
+module.exports = __webpack_require__(346);
 
 
 /***/ })

@@ -25,7 +25,7 @@ app.use(cors())
 // get all data/stuff of the body (POST) parameters
 // parse application/json 
 app.use(bodyParser.json()); 
-app.use(express.static('public'));
+app.use(express.static('gametable/public'));
 
 // parse application/vnd.api+json as json
 app.use(bodyParser.json({ type: 'application/vnd.api+json' })); 
