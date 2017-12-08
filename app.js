@@ -9,6 +9,7 @@ var cors           = require('cors');
 
 // configuration ===========================================
 
+process.env.PWD = process.cwd()
 // config files
 var db = require('./config/db');
 
@@ -24,8 +25,7 @@ app.use(cors())
 // get all data/stuff of the body (POST) parameters
 // parse application/json 
 app.use(bodyParser.json()); 
-
-app.use(express.static(__dirname + '/gametable/public'));
+app.use(express.static(process.env.PWD  + '/gametable/public'));
 
 // parse application/vnd.api+json as json
 app.use(bodyParser.json({ type: 'application/vnd.api+json' })); 
