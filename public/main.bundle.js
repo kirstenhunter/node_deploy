@@ -109,9 +109,8 @@ var Games = (function () {
         var _this = this;
         this.http = http;
         this.games = [];
-        this.serverApi = 'http://localhost:8080';
         console.log("GETTING ALL GAMES");
-        var URI = this.serverApi + "/api/games/";
+        var URI = "/api/games/";
         console.log(URI);
         http.get(URI)
             .map(function (res) { return res.json(); })
