@@ -3,7 +3,7 @@
 var mongoose = require('mongoose');
 mongoose.set('debug', true);
 
-const dbURI = process.env.MONGODB_URI || 'mongodb://synedra:pa55w0rd@ds119306.mlab.com:19306/synedra_locallibrary';
+const dbURI = process.env.MONGODB_URI; 
 
 var promise = mongoose.connect(dbURI, {
   useMongoClient: true,
