@@ -1,0 +1,24 @@
+<h1>Game Data: {{environmentName}}</h1>
+<table id="table" class="table">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Name</th>
+          <th>Category</th>
+          <th>Description</th>
+          <th>Players</th>
+          <th>Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let game of games">
+	        <td><img src={{game.Image}} width=100></td>
+          <td>{{game.Name}}</td>
+          <td>{{game.Category}}</td>
+          <td>{{game.Description}}</td>
+          <td>{{game.Players}}</td>
+          <td>{{game.Rating}}</td>
+          
+        </tr>
+      </tbody>
+   </table>

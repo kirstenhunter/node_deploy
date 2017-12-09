@@ -14,7 +14,6 @@ var Game = require('./models/game');
                                 // nothing after res.send(err) will execute
                 if (err)
                     res.send(err);
-                console.log(games)
                 res.json(games); // return all nerds in JSON format
             });
         });
