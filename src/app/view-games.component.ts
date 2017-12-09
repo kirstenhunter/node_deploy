@@ -15,9 +15,7 @@ export class Games{
   private games: Game[] = [];
   environmentName = environment.environment;
   constructor(private http: Http ) {    
-    console.log("GETTING ALL GAMES");
     let URI = environment.api_url || `/api/games/`;
-    console.log(URI);
     http.get(URI)
       .map(res => res.json()) 
       .subscribe(games => this.games = games); 
