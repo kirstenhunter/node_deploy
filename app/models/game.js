@@ -1,7 +1,6 @@
 // app/models/games.js
 // grab the mongoose module
 var mongoose = require('mongoose');
-mongoose.set('debug', true);
 
 const dbURI = process.env.MONGODB_URI; 
 
