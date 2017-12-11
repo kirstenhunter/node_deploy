@@ -54,7 +54,7 @@ jobs:
           command: sudo pip install awsebcli
       - run:
           name: deploy to EB
-          command: ls -al ~/repo
+          command: ls -al
       - run:
           name: deploy to EB
           command: eb deploy
