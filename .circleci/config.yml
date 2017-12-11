@@ -51,11 +51,8 @@ jobs:
           name: Install AWS EB
           command: sudo pip install awsebcli
       - run:
-          name: Install AWS EB
-          command: eb init
-      - run:
           name: deploy to EB
-          command: eb deploy prod --profile default
+          command: eb deploy --profile default
 
 workflows:
   version: 2
