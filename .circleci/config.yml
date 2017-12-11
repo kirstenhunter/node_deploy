@@ -57,7 +57,7 @@ jobs:
           command: ls -al
       - run:
           name: deploy to EB
-          command: eb deploy
+          command: eb deploy --debug
 
 workflows:
   version: 2
