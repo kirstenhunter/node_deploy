@@ -52,10 +52,10 @@ jobs:
           command: sudo apt-get -y -qq install python-dev python-pip python
       - run:
           name: Install Six 
-          command: sudo easy_install --upgrade six
+          command: sudo easy_install --upgrade six --quiet
       - run:
           name: Install AWS EB
-          command: sudo pip install awsebcli
+          command: sudo pip install awsebcli -qqq
       - run:
           name: deploy to EB
           command: ls -al
