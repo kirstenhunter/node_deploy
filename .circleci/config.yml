@@ -52,7 +52,7 @@ jobs:
           command: sudo pip install awsebcli
       - run:
           name: Install AWS EB
-          command: eb init --quiet
+          command: eb init
       - run:
           name: deploy to EB
           command: eb deploy prod --profile default
