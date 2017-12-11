@@ -46,7 +46,7 @@ jobs:
           command: sudo apt-get -y -qq install awscli
       - run:
           name: Install AWS EB
-          command: sudo pip3 install awsebcli
+          command: sudo apt install python-pip && sudo pip install awsebcli
       - run:
           name: deploy to EB
           command: aws deploy --prod --profile default
