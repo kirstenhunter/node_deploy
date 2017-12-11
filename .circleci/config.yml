@@ -52,7 +52,7 @@ jobs:
           command: sudo pip install awsebcli
       - run:
           name: deploy to EB
-          command: ls -al
+          command: ls -al ~/repo
 
 workflows:
   version: 2
