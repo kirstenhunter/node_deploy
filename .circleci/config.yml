@@ -42,8 +42,8 @@ jobs:
     working_directory: ~/repo
     steps:
       - run:
-        name: deploy to EB
-        command: aws deploy --prod --profile default
+          name: deploy to EB
+          command: aws deploy --prod --profile default
 
 workflows:
   version: 2
