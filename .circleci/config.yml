@@ -45,6 +45,9 @@ jobs:
           name: Install AWS CLI
           command: sudo apt-get -y -qq install awscli
       - run:
+          name: Install AWS EB
+          command: sudo apt-get -y -qq install awsebcli
+      - run:
           name: deploy to EB
           command: aws deploy --prod --profile default
 
