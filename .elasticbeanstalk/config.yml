@@ -2,6 +2,10 @@ branch-defaults:
   master:
     environment: prod
     group_suffix: null
+environment-defaults:
+  prod:
+    branch: null
+    repository: null
 global:
   application_name: gametable
   branch: null

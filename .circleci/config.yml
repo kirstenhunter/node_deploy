@@ -45,11 +45,14 @@ jobs:
           name: Install AWS CLI
           command: sudo apt-get -y -qq install python-dev python-pip python
       - run:
-          name: Install AWS EB
+          name: Install Six 
           command: sudo easy_install --upgrade six
       - run:
           name: Install AWS EB
           command: sudo pip install awsebcli
+      - run:
+          name: Install AWS EB
+          command: eb init --quiet
       - run:
           name: deploy to EB
           command: eb deploy prod --profile default
