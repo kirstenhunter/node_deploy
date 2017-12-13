@@ -1,7 +1,7 @@
 // app/models/games.js
 // grab the mongoose module
 var mongoose = require('mongoose');
-
+mongoose.Promise = global.Promise;
 const dbURI = process.env.MONGODB_URI; 
 
 var promise = mongoose.connect(dbURI, {

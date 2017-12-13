@@ -6,17 +6,47 @@ var Game = require('./models/game');
         // handle things like api calls
         // authentication routes
 
-        // sample api route
-        app.get('/api/games', function(req, res) {
+        app.get('/api/games', (req, res) => {
             // use mongoose to get all games in the database
-            Game.find(function(err, games) {
-                // if there is an error retrieving, send the error. 
-                                // nothing after res.send(err) will execute
-                if (err)
-                    res.send(err);
-                res.json(games); // return all nerds in JSON format
-            });
+            Game.find({}, (err, games) => {})
+            .then(games => {
+                res.json(games)
+            })
+            .catch(err => {
+                console.log(err)
+            })
         });
+        app.post('/api/games', (req, res) => {
+            let myGame = new Game(req.body)
+            myGame.save()
+            .then(item => {
+                res.send("Item saved")
+            })
+            .catch(err => {
+                res.status(400).send("Unable to save")
+            })
+        })       
+        app.delete('/api/games', (req, res) => {
+            let myGame = new Game(req.body)
+            myGame.remove()
+            .then(item => {
+                res.send("Item deleted")
+            })
+            .catch(err => {
+                res.status(400).send("Unable to delete")
+            })
+        })        
+        app.put('/api/games', (req, res) => {
+            let selector = {"_id":req.body._id}
+            Game.findOneAndUpdate(selector, req.body, {upsert:true, new:true})
+            .then(doc => {
+                return res.send("succesfully saved" + doc);
+            })
+            .catch(err => {
+                return res.send(500, { error: err });
+            })
+        })       
+  
         // route to handle creating goes here (app.post)
         // route to handle delete goes here (app.delete)
 
