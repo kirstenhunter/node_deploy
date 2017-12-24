@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node app.js",
     "ng": "ng",
-    "postinstall": "cross-var if [ -n ${NG_ENV} ]; then ng build --environment=${NG_ENV}; fi"
+    "postinstall": "cross-var if [ -n ${NG_ENV} ]; then ng build --environment=${NG_ENV}; fi",
     "test": "node test.js",
     "pree2e": "webdriver-manager update --standalone false --gecko false",
     "e2e": "protractor"
