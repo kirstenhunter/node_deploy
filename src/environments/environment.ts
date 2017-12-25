@@ -5,6 +5,6 @@
 
 export const environment = {
   production: false,
-  api_url: "http://localhost:8080/api/games",
-  environment: "dev"
+  api_url: "/api/games",
+  environment: "staging"
 };
