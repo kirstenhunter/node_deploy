@@ -11,7 +11,6 @@ var cors           = require('cors');
 
 process.env.PWD = process.cwd()
 // config files
-var db = require('./config/db');
 
 // set our port
 var port = process.env.PORT || 8080; 
@@ -36,7 +35,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // override with the X-HTTP-Method-Override header in the request. simulate DELETE/PUT
 app.use(methodOverride('X-HTTP-Method-Override')); 
 
-app. get('*', function(req, res){ res.send('Entry point not found.  Set up your environment variables for deployment', 200); })
 
 // routes ==================================================
 require('./app/routes')(app); // configure our routes
