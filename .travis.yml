@@ -6,6 +6,6 @@ deploy:
   provider: heroku
   api_key:
     secure: Zzn0qRG7KMgemAvx8a9pNZ4ELWzpxr6CKjCUMcBHazZ2q+9H5fRty0xs50ffIMpi02RwKiGjdaZRtcg+KpxOWUL7QmB6NK5ejlgAi/zTV3atVF1IOW96Zl62eh6JwJFooTm6XjohvhzQeDLFeX1ofHxIXJY6HijaPVLzGQYhv1/KoZ0gcL+gKSeAW72/KN1NsZlhuvkhSQKXIQwvpcnza5R7Qvohs1D0SQenjb4YDez4jKjFyARKwGuDrwxN2afGPLwSskGtM+oQ/uRSHlfO2s9DylwYlASw5+oihlqOcEJKv7/+KJnochpJnGTFM9PrBhiGrLLB/JvBQHY8WVl+qdfj8bRhu1xKWKFIkPmPHjSXbydjh8Ia5o72i+lyQ2l36F5oti6oQc9+TaApHKx4ReISQJV02WT5Pihqe93sEW4m18dnD0039LMcaDSfXCiLq9HlFLlfvXSPsJf+UHv9dRpmoR+kF0Xw5Y5lAU5PTwGdkmt+r9uoXlQ5Iap6E0g6/ls59NQ9Fs8cMpefw0gGvwM9njFuRu4w7x+HTCKPqjfmFIfk/ah0TuSplqjMFjsUSAIUxDQo3pmZON4TnopMv3fTvcDiZ9q50jffG5s6QlqUKOyEskFViDiT4zeFe2BZsZqrou1gXyTNrgIPyMaTyK6JkiDfeiVgRSvhJn2lMeY=
-  app: polar-spire-59082
+  app: pure-fjord-99806
   on:
     repo: synedra/node_deploy
