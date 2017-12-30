@@ -1,4 +1,4 @@
-// server.js
+// app.js
 
 // modules =================================================
 var express        = require('express');
