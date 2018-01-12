@@ -7,7 +7,7 @@
 let ng_cmd = "ng build"
 
 if (process.env.NG_CMD && process.env.NG_CMD=="nobuild") {
-    exit;
+    process.exit(1);
 }
 if (process.env.NG_CMD) {
     ng_cmd = "ng build --environment " + process.env.NG_CMD 
